@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="programpunchsystemDataSet2" targetNamespace="http://tempuri.org/programpunchsystemDataSet2.xsd" xmlns:mstns="http://tempuri.org/programpunchsystemDataSet2.xsd" xmlns="http://tempuri.org/programpunchsystemDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="programpunchsystemConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="programpunchsystemConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PunchSystem.Properties.Settings.GlobalReference.Default.programpunchsystemConnectionString1" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="questionTableAdapter" GeneratorDataComponentClassName="questionTableAdapter" Name="question" UserDataComponentName="questionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="programpunchsystemConnectionString1 (Settings)" DbObjectName="programpunchsystem.question" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `stu_question`, `date`, `stu_answer` FROM `question`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="stu_question" DataSetColumn="stu_question" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="stu_answer" DataSetColumn="stu_answer" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="programpunchsystemDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="programpunchsystemDataSet2" msprop:Generator_UserDSName="programpunchsystemDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="question" msprop:Generator_TableClassName="questionDataTable" msprop:Generator_TableVarName="tablequestion" msprop:Generator_TablePropName="question" msprop:Generator_RowDeletingName="questionRowDeleting" msprop:Generator_RowChangingName="questionRowChanging" msprop:Generator_RowEvHandlerName="questionRowChangeEventHandler" msprop:Generator_RowDeletedName="questionRowDeleted" msprop:Generator_UserTableName="question" msprop:Generator_RowChangedName="questionRowChanged" msprop:Generator_RowEvArgName="questionRowChangeEvent" msprop:Generator_RowClassName="questionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stu_question" msprop:Generator_ColumnVarNameInTable="columnstu_question" msprop:Generator_ColumnPropNameInRow="stu_question" msprop:Generator_ColumnPropNameInTable="stu_questionColumn" msprop:Generator_UserColumnName="stu_question" type="xs:string" minOccurs="0" />
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="stu_answer" msprop:Generator_ColumnVarNameInTable="columnstu_answer" msprop:Generator_ColumnPropNameInRow="stu_answer" msprop:Generator_ColumnPropNameInTable="stu_answerColumn" msprop:Generator_UserColumnName="stu_answer" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
